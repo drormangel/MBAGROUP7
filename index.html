@@ -1,0 +1,36 @@
+    <html>
+<head>
+<script type="text/javascript">
+<!--
+// Create an array of the links to choose from:
+var links = new Array();
+links[0] = "https://forms.gle/3pyq44GDnxZBSfaj8";
+links[1] = "https://forms.gle/oyodP8a4qvDxD2tw5";
+links[2] = "https://forms.gle/Jc2dNijqpJeTh7Pu7";
+links[3] = "https://forms.gle/8ozkQyz74AdS1b3W9";
+
+function openLink() {
+  // Chooses a random link:
+  var i = Math.floor(Math.random() * links.length);
+  // Directs the browser to the chosen target:
+  parent.location = links[i];
+  return false;
+}
+//-->
+</script>
+<style>
+.btn {
+    height:50px;
+    width:200px;
+    background:#125288;
+    color:#fff;
+    font-size:18px;
+}
+</style>
+</head>
+<body>
+</body>
+<center>
+<button onclick="openLink();" class='btn'>Try to Click</button>
+</center>
+</html>
